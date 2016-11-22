@@ -1,0 +1,11 @@
+
+<div class="container text-center">
+  <form action="/game" method="get">
+    <div class="form-group">
+      <label for="grid_size">How big would you like the word grid to be?</label>
+      <input type="hidden" id="time_start" class="form-control" name="time_start" value= "<%= Time.now %>">
+      <input type="text" id="grid_size" class="form-control" name="grid_size" placeholder="5?">
+    </div>
+      <input type="submit" class="btn btn-primary text-center" value="Go on!">
+  </form>
+</div>

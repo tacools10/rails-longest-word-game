@@ -1,0 +1,27 @@
+<!-- puts "******** Welcome to the longest word-game !********"
+puts "Here is your grid :"
+grid = generate_grid(12)
+puts grid.join(" ")
+puts "*****************************************************" -->
+
+
+
+
+
+<div class="container text-center">
+  <h1 class="text-center"> Welcome to the longest word-game! <br/>
+  Your grid is <%= @grid %> of length <%= @grid_size %> </h1>
+</div>
+
+<div class="container text-center">
+  <form action="/score" method="get">
+    <div class="form-group">
+      <label for="word">Please enter your best word?</label>
+      <input type="hidden" id="time" class="form-control" name="time" value= "<%= Time.now %>">
+      <input type="text" id="word" class="form-control" name="word" placeholder="abcdef?">
+    </div>
+      <input type="submit" class="btn btn-primary text-center" value="Go on!">
+  </form>
+</div>
+
+
